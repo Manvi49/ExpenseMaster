@@ -1,0 +1,173 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url('https://img.freepik.com/free-photo/blue-piggy-bank-with-money-coins_23-2148305900.jpg?t=st=1719550124~exp=1719553724~hmac=9f6c1b5edc6b5d766dfc335b6f76e81feb6ac6298cf5f7a81c33f7f0bc7ce3d9&w=996');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wrapper {
+  width: 90%;
+  font-size: 16px;
+  max-width: 43.75em;
+  margin: 1em auto;
+}
+
+.container {
+  width: 100%;
+}
+
+.sub-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3em;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.flex-space {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapper h3 {
+  color: black;
+  font-weight: 500;
+  margin-bottom: 0.6em;
+}
+
+.container input {
+  display: block;
+  width: 100%;
+  padding: 0.6em 0.3em;
+  border: 1px solid #3f042f;
+  border-radius: 0.3em;
+  color: #9d4abb;
+  outline: none;
+  font-weight: 400;
+  margin-bottom: 0.6em;
+}
+
+.container input:focus {
+  border-color: #839dea;
+}
+
+.total-amount-container,
+.user-amount-container {
+  background-color: #839dea;
+  padding: 1.25em 0.9em;
+  border-radius: 0.3em;
+  box-shadow: 0 0.6em 1.2em rgba(28, 0, 80, 0.06);
+  margin-top: 2em; /* Adjust the value as needed */
+}
+
+.output-container {
+  background-color: #426e68;
+  color: black;
+  border-radius: 0.3em;
+  box-shadow: 0 0.6em 1.2em rgba(10, 1, 27, 0.06);
+  margin: 2em 0;
+  padding: 1.2em;
+}
+
+.output-container p {
+  font-weight: 500;
+  margin-bottom: 0.6em;
+}
+
+.output-container span {
+  display: block;
+  text-align: center;
+  font-weight: 400;
+  color: #e5e5e5;
+}
+
+.submit {
+  font-size: 1em;
+  margin-top: 0.8em;
+  background-color: #e653e8;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 0.6em 1.2em;
+  border-radius: 0.3em;
+  cursor: pointer;
+}
+
+.list {
+  background-color: #426e68;
+  padding: 1.8em 1.2em;
+  box-shadow: 0 0.6em 1.2em rgba(12, 0, 33, 0.637);
+  border-radius: 0.6em;
+}
+
+.sublist-content {
+  width: 100%;
+  border-left: 0.3em solid #839dea;
+  margin-bottom: 0.6em;
+  padding: 0.5em 1em;
+  display: grid;
+  grid-template-columns: 3fr 2fr 1fr 1fr;
+}
+
+.product {
+  font-weight: 500;
+  color: black;
+}
+
+.amount {
+  color: black;
+  margin-left: 20%;
+}
+
+.icons-container {
+  width: 5em;
+  margin: 1.2em;
+  align-items: center;
+}
+
+.product-title {
+  margin-bottom: 1em;
+}
+
+.hide {
+  display: none;
+}
+
+.error {
+  color: #ff465a;
+}
+
+.edit {
+  margin-left: auto;
+}
+
+.edit,
+.delete {
+  background: transparent;
+  cursor: pointer;
+  margin-right: 1.5em;
+  border: none;
+  color: #839dea;
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+      font-size: 14px;
+  }
+
+  .sub-container {
+      grid-template-columns: 1fr;
+      gap: 1em;
+  }
+}
